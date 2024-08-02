@@ -1,3 +1,7 @@
+# OBS "Failed to fetch styles from registry."(npx shadcn-ui@latest init):
+New-Item -Path 'Env:' -Name 'HTTP_PROXY' -Value 'http://server:port/'
+New-Item -Path 'Env:' -Name 'HTTPS_PROXY' -Value 'http://server:port/'
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

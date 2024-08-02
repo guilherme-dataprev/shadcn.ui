@@ -2,6 +2,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator } from "./components/ui/breadcrumb";
 import { ModeToggle } from "./components/mode-toggle";
+import MenuBar from "./components/MenuBar";
 import Home from "./pages/Home";
 import Library from "./pages/Library";
 import Data from "./pages/Data";
@@ -9,7 +10,7 @@ import './App.css';
 
 const App: React.FC = () => {
   const location = useLocation();
-
+  
   const generateBreadcrumbs = () => {
     const pathnames = location.pathname.split('/').filter(x => x);
     const breadcrumbs = pathnames.map((value, index) => {
@@ -22,9 +23,9 @@ const App: React.FC = () => {
   const breadcrumbs = generateBreadcrumbs();
 
   return (
-    <>
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="App">
+        <MenuBar />
         <ModeToggle />
         <Breadcrumb>
           <BreadcrumbList>
@@ -47,7 +48,6 @@ const App: React.FC = () => {
         </Routes>
       </div>
     </ThemeProvider>
-    </>
   );
 };
 

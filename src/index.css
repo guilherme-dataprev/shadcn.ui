@@ -61,9 +61,9 @@
 
 @layer base {
   * {
-    @apply dp-border-border;
+    @apply border-border;
   }
   body {
-    @apply dp-bg-background dp-text-foreground;
+    @apply bg-background text-foreground;
   }
 }

@@ -1,7 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator } from "./components/ui/breadcrumb";
-import { ModeToggle } from "./components/mode-toggle";
 import MenuBar from "./components/MenuBar";
 import Home from "./pages/Home";
 import Library from "./pages/Library";
@@ -26,7 +25,6 @@ const App: React.FC = () => {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="App">
         <MenuBar />
-        <ModeToggle />
         <Breadcrumb>
           <BreadcrumbList>
             {breadcrumbs.map((breadcrumb, index) => (

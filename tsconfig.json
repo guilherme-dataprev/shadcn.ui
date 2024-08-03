@@ -1,5 +1,9 @@
 {
   "files": [],
+  "files.associations": { 
+    // "*.scss": "postcss" ,
+    "*.css": "tailwindcss"
+  },
   "references": [
     {
       "path": "./tsconfig.app.json"

@@ -2,6 +2,8 @@
 New-Item -Path 'Env:' -Name 'HTTP_PROXY' -Value 'http://server:port/'
 New-Item -Path 'Env:' -Name 'HTTPS_PROXY' -Value 'http://server:port/'
 
+Fix Tailwind warning. Install "PostCSS Language Support no VSCode"
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
